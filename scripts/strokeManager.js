@@ -63,7 +63,20 @@ function keypress() {
 }
 
 function initUI() {
-    $('#character').html(demoSentence[characterIndex]);
+    var $previousCharacter = $('#character .previous').empty(),
+        $currentCharacter = $('#character .current').empty(),
+        $nextCharacter = $('#character .next').empty();
+
+    if (characterIndex - 1 >= 0 && characterIndex - 1 < demoSentence.length) {
+        $previousCharacter.html(demoSentence[characterIndex - 1]);
+    }
+
+    $currentCharacter.html(demoSentence[characterIndex]);
+
+    if (characterIndex + 1 >= 0 && characterIndex + 1 < demoSentence.length) {
+        $nextCharacter.html(demoSentence[characterIndex + 1]);
+    }
+
     $('#strokes').empty().append(strokeManager.strokesGen(demoStroke[characterIndex]));
 }
 
