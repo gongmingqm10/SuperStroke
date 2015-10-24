@@ -35,7 +35,6 @@ function loadDataToUI(previousWord, currentWord, nextWord) {
     }
 
     $('#strokes').empty().append(strokeManager.strokesGen(currentWord["strokes"].split(' ')));
-    resultManager.resetStartTime();
 }
 
 $(document).ready(function () {
@@ -49,6 +48,7 @@ $(document).ready(function () {
             return Math.random() - 0.5;
         });
         loadDataToUI(wordsManager.previousWord(), wordsManager.currentWord(), wordsManager.nextWord());
+        resultManager.resetStartTime();
     });
     $('.key-wrapper').click(keypress);
 });
