@@ -1,5 +1,9 @@
 "use strict"
-var buttonList = [
+
+
+$(document).ready(function () {
+    
+    var buttonList = [
     {
         "content": "一",
         "number": "1",
@@ -31,9 +35,7 @@ var buttonList = [
         "value": "*"
     },
     ];
-
-
-$(document).ready(function () {
+    
     var ButtonBuilder = function (buttonConfig) {
         var button = $("<div>").addClass("key-wrapper btn btn-primary").attr("data-value",buttonConfig.value);
         var content = $("<div>").addClass("content").text(buttonConfig.content);
