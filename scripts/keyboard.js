@@ -42,9 +42,9 @@ $(document).ready(function () {
             "size": ""
     },
         {
-            "content": "*",
+            "content": "＊",
             "number": "6",
-            "value": "*",
+            "value": "＊",
             "size": ""
     },
         {

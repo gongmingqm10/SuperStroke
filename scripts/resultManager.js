@@ -6,7 +6,8 @@ var resultManager = {
         '丨': [],
         '丿': [],
         '丶': [],
-        'ㄥ': []
+        'ㄥ': [],
+        '＊': []
     },
     sortedResult: [],
     startTime: 0,
