@@ -1,0 +1,97 @@
+{
+  "level": "基础训练",
+  "description": "训练笔画基础，横撇竖捺勾",
+  "words": [
+    {
+      "name": "我",
+      "strokes": "w o",
+      "frac": ["w", "o"]
+    },
+    {
+      "name": "是",
+      "strokes":"s h i",
+      "frac": ["sh","i"]
+    },
+    {
+      "name": "安",
+      "frac": ["an"]
+    },
+    {
+      "name": "安",
+      "frac": ["an"]
+    },
+    {
+      "name": "谭",
+      "frac": ["t","an"]
+    },
+    {
+      "name": "蛋",
+      "frac": ["d","an"]
+    },
+    {
+      "name": "安",
+      "frac": ["an"]
+    },
+    {
+      "name": "半",
+      "frac": ["b","an"]
+    },
+    {
+      "name": "干",
+      "frac": ["g","an"]
+    },
+    {
+      "name": "饭",
+      "frac": ["f","an"]
+    },
+    {
+      "name": "慢",
+      "frac": ["m","an"]
+    },
+    {
+      "name": "南",
+      "frac": ["n", "an"]
+    },
+    {
+      "name": "懒",
+      "frac": ["l", "an"]
+    },
+    {
+      "name": "烂",
+      "frac": ["l", "an"]
+    },
+    {
+      "name": "男",
+      "frac": ["n", "an"]
+    },
+    {
+      "name": "天",
+      "frac": ["t", "ian"]
+    },
+    {
+      "name": "变",
+      "frac": ["b", "ian"]
+    },
+    {
+      "name": "电",
+      "frac": ["d", "ian"]
+    },
+    {
+      "name": "线",
+      "frac": ["x", "ian"]
+    },
+    {
+      "name": "面",
+      "frac": ["m", "ian"]
+    },
+    {
+      "name": "年",
+      "frac": ["n", "ian"]
+    },
+    {
+      "name": "倩",
+      "frac": ["q","ian"]
+    }
+
+  ]
+}
