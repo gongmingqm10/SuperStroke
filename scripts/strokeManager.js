@@ -10,7 +10,6 @@ var demoStroke = [
 var characterIndex = 0;
 var strokeIndex = 0;
 
-
 var strokeManager = {
     SUCCESS: 0,
     FINISHED: 1,
@@ -60,14 +59,20 @@ function keypress () {
     
     if ( statu == strokeManager.FINISHED ){
         //TODO
+        characterIndex++;
+        initUI();
     }
     console.log(userInput);
 };
 
+function initUI() {
+    $('#character').html(demoSentence[characterIndex]);
+    $('#strokes').empty();
+    $('#strokes').append(strokeManager.strokesGen(demoStroke[characterIndex]));
+}
+
 $(document).ready(function() {
-	$('#character').html(demoSentence[characterIndex]);
-    
-	$('#strokes').append(strokeManager.strokesGen(demoStroke[characterIndex]));
+    initUI();
     
     $('.key-wrapper').click(keypress);
 });
