@@ -35,6 +35,7 @@ function loadDataToUI(previousWord, currentWord, nextWord) {
     }
 
     $('#strokes').empty().append(strokeManager.strokesGen(currentWord["strokes"].split(' ')));
+    resultManager.resetStartTime();
 }
 
 $(document).ready(function () {
