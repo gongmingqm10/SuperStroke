@@ -48,12 +48,6 @@ $(document).ready(function () {
     if ( window.innerHeight < 500 ){
         $("body").css("font-size", "12px");
     }
-    $.getJSON("data/basic-pinyin.json", function (data) {
-        groupManager.setDictionary(data["words"]);
-        wordsManager.setWords(groupManager.getGroup());
-    });
-
-
 
     $.getJSON("data/basic-pinyin.json", function (data) {
         wordsManager.setWords(data["words"].sort(function () {
@@ -67,8 +61,7 @@ $(document).ready(function () {
     });
     $('.key-wrapper').click(keypress);
 
-
-
+    
     menu.init("index.html");
 
 
