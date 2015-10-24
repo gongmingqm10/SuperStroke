@@ -4,6 +4,7 @@ var wordsManager = {
     words: [],
     currentIndex: 0,
     fracMap: {},
+    fracList:[],
     updateIndex: function () {
         this.currentIndex++;
         loadDataToUI(this.previousWord(), this.currentWord(), this.nextWord());
@@ -28,7 +29,12 @@ var wordsManager = {
                 }
                 self.fracMap[frac].push(word);
             })
-        })
+        });
+        for ( var key in this.fracMap ){
+            if (this.fracMap.hasOwnProperty(key)){
+                this.fracList.push(key);
+            }
+        }
     }
 };
 

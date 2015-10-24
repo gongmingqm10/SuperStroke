@@ -24,6 +24,7 @@ var strokeManager = {
     },
 
     forward: function (userInput) {
+        if (userInput.length==0){return this.SUCCESS;}
         if (this.validate(userInput)) {
             resultManager.storeResult(this.currentStroke());
             resultManager.resetStartTime();

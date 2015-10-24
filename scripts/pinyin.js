@@ -49,6 +49,7 @@ $(document).ready(function () {
             return Math.random() - 0.5;
         });
         wordsManager.init();
+        pyManager.init();
         loadDataToUI(wordsManager.previousWord(), wordsManager.currentWord(), wordsManager.nextWord());
         resultManager.resetStartTime();
     });

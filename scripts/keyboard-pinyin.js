@@ -5,10 +5,10 @@ $(document).ready(function () {
 
     var buttonList = [
         {
-            "content": "'",
+            "content": "分词",
             "number": "1",
             "value": "",
-            "size": ""
+            "size": "font-small"
         },
         {
             "content": "abc",
