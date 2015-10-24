@@ -1,21 +1,35 @@
-#keyboard{
-    display:block;
-    position:fixed;
+#keyboard {
+    display: block;
+    position: fixed;
     width: 100%;
     bottom: 0;
-    background-color:antiquewhite;
+    background-color: antiquewhite;
 }
 
-#keyboard .key-wrapper{
-    display:block;
+#keyboard .key-wrapper {
+    display: block;
     font-family: monospace;
-    width: 80%;
-    left: 10%;
+    width: 100%;
+    height: 5em;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: .5em;
-    margin-bottom: .5em;    
+    margin-bottom: .5em;
 }
 
-#keyboard .content{
+#keyboard .number {
+    display: block;
+}
+#keyboard .number.empty{
+    height: .5em;
+}
+
+
+#keyboard .content {
     font-size: 30px;
 }
 
+#keyboard .content.font-small{
+    padding-top: .5em;
+    font-size: 15px;
+}
