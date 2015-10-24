@@ -10,13 +10,13 @@ body {
 }
 
 #character {
-    margin-top: 100px;
+    margin-top: 1em;
     font-size: 4.4em;
     text-align: center;
 }
 
 #strokes {
-    font-size: 4em;
+    font-size: 2em;
     text-align: center;
 }
 
