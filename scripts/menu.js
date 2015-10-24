@@ -3,8 +3,8 @@ var historyPage = $("<div>").addClass("historyPage").text("History");
 
 
 var menu = {
-    historyButton : $("<div>").addClass("nav btn btn-small btn-default").text("H"),
-    switchButton : $("<a>").addClass("nav btn btn-small btn-default").text("S"),
+    historyButton : $("<div>").addClass("navi btn btn-default").text("换"),
+    switchButton : $("<a>").addClass("navi btn btn-default").text("查"),
 
 
     "init":function(href){
@@ -15,7 +15,7 @@ var menu = {
         historyPage.hide();
         $("body").prepend(historyPage);
 
-        this.switchButton.attr("href",href );
+        this.switchButton.attr("href", href);
 
         this.historyButton.on("click", function(){
 

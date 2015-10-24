@@ -8,12 +8,14 @@ function keypress() {
         $(this).addClass("error");
     }
     if (status == strokeManager.FINISHED) {
+
         characterIndex++;
         wordsManager.currentWord().frac.forEach(function(f){
             resultManager.checkPinyinPoint(f);
         });
         resultManager.resetStartTime();
 
+        
         wordsManager.updateIndex();
     }
 }
@@ -50,9 +52,7 @@ $(document).ready(function () {
     }
 
     $.getJSON("data/basic-pinyin.json", function (data) {
-        wordsManager.setWords(data["words"].sort(function () {
-            return Math.random() - 0.5;
-        }));
+        wordsManager.setWords(data["words"]);
         wordsManager.initPinyin();
         pyManager.initPinyin();
         loadDataToUI(wordsManager.previousWord(), wordsManager.currentWord(), wordsManager.nextWord());

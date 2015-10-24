@@ -1,4 +1,4 @@
-#menu .nav{
+#menu .navi{
     float:right;
     right: 0;
     top : 0;
@@ -8,14 +8,12 @@
     font-size: 1em;
 }
 
-
 #menu {
     width:200px;
     display:inline-block;
     overflow: auto;
     white-space: nowrap;
     margin:0px auto;
-    border:1px red solid;
     position: fixed;
     right: 0;
     top: 0;
