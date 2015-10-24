@@ -30,10 +30,10 @@ $(document).ready(function () {
         "value": "ㄥ"
     },
     {
-        "content": "*",
+        "content": "＊",
         "number": "6",
-        "value": "*"
-    },
+        "value": "＊"
+    }
     ];
     
     var ButtonBuilder = function (buttonConfig) {
@@ -50,6 +50,5 @@ $(document).ready(function () {
         var wrapper = $("<div>").addClass("col-xs-4");
         wrapper.append(ButtonBuilder(buttonList[idx]));
         $("#keyboard .kb-wrapper").append(wrapper);
-        console.log(wrapper);
     };
 });

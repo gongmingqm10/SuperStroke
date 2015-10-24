@@ -8,3 +8,21 @@
 #strokes {
     text-align: center;
 }
+
+#character .previous {
+    text-align: right;
+    font-size: 70px;
+    padding-top: 25px;
+    opacity: .3;
+}
+
+#character .current {
+
+}
+
+#character .next {
+    text-align: left;
+    font-size: 70px;
+    padding-top: 25px;
+    opacity: .3;
+}
