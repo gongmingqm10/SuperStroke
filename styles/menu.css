@@ -1,0 +1,32 @@
+#menu .nav{
+    float:right;
+    right: 0;
+    top : 0;
+
+    display: flex;
+
+    font-size: 1em;
+}
+
+
+#menu {
+    width:200px;
+    display:inline-block;
+    overflow: auto;
+    white-space: nowrap;
+    margin:0px auto;
+    border:1px red solid;
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+
+.historyPage {
+    display: block;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255,255,255,.8);
+    z-index: 3;
+    overflow-y: scroll;
+}

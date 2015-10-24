@@ -18,6 +18,7 @@ function keypress() {
     }
 }
 
+
 function loadDataToUI(previousWord, currentWord, nextWord) {
     var $previousCharacter = $('#character .previous').empty(),
         $currentCharacter = $('#character .current').empty(),
@@ -48,6 +49,13 @@ $(document).ready(function () {
         $("body").css("font-size", "12px");
     }
     $.getJSON("data/basic-pinyin.json", function (data) {
+        groupManager.setDictionary(data["words"]);
+        wordsManager.setWords(groupManager.getGroup());
+    });
+
+
+
+    $.getJSON("data/basic-pinyin.json", function (data) {
         wordsManager.setWords(data["words"].sort(function () {
             return Math.random() - 0.5;
         }));
@@ -58,4 +66,10 @@ $(document).ready(function () {
         resultManager.resetStartTime();
     });
     $('.key-wrapper').click(keypress);
+
+
+
+    menu.init("index.html");
+
+
 });

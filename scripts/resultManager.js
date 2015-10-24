@@ -74,6 +74,18 @@ var resultManager = {
         $('.fastest').html('最熟练的笔画：' + this.getFastestStroke());
         $('.slowest').html('最不熟练的笔画：' + this.getSlowestStroke());
     },
+    report: function(){
+        var wrapper = $("<div>").text("haha");
+        for ( var key in this.result){
+            var obj = this.result[key];
+            wrapper.append( $("<p>").text(key + "," + obj.average) );
+        }
+        for ( var key in this.resultList){
+            var obj = this.resultList[key];
+            wrapper.append( $("<p>").text(key + "," + obj.average));
+        }
+        return wrapper;
+    },
     getFastestStroke: function () {
         var fastestStroke = this.sortedResult[0];
         return fastestStroke ? fastestStroke.stroke : 'NA';

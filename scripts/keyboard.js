@@ -42,10 +42,10 @@ $(document).ready(function () {
             "size": ""
     },
         {
-            "content": "＊",
+            "content": "通配",
             "number": "6",
             "value": "＊",
-            "size": ""
+            "size": "font-small"
     },
         {
             "content": "C",

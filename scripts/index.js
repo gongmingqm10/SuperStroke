@@ -56,4 +56,5 @@ $(document).ready(function () {
         resultManager.resetStartTime();
     });
     $('.key-wrapper').click(keypress);
+    menu.init("pinyin.html");
 });

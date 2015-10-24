@@ -4,236 +4,294 @@
   "words": [
   {
     "name": "一",
-    "strokes": "一"
+    "strokes": "一",
+    "inform":""
   },
   {
     "name": "十",
-    "strokes": "一 丨"
+    "strokes": "一 丨",
+    "inform":""
   },    
   {
     "name": "二",
-    "strokes": "一 一"
+    "strokes": "一 一",
+    "inform":""
   },
   {
     "name": "三",
-    "strokes": "一 一 一"
+    "strokes": "一 一 一",
+    "inform":""
   },
   
   {
     "name": "土",
-    "strokes": "一 丨 一"
+    "strokes": "一 丨 一",
+    "inform":""
   },
   {
     "name": "干",
-    "strokes": "一 一 丨"
+    "strokes": "一 一 丨",
+    "inform":""
   },
   {
     "name": "王",
-    "strokes": "一 一 丨 一"
+    "strokes": "一 一 丨 一",
+    "inform":""
   },
   {
     "name": "八",
-    "strokes": "丿 丶"
+    "strokes": "丿 丶",
+    "inform":""
   },
   {
     "name": "千",
-    "strokes": "丿 一 丨"
+    "strokes": "丿 一 丨",
+    "inform":""
   },
   {
     "name": "开",
-    "strokes": "一 一 丿 丨"
+    "strokes": "一 一 丿 丨",
+    "inform":""
   },
   {
     "name": "元",
-    "strokes": "一 一 丿 ㄥ"
+    "strokes": "一 一 丿 ㄥ",
+    "inform":"只要是弯钩都是\"ㄥ\"哟~"
   },
   {
     "name": "无",
-    "strokes": "一 丨 丿 ㄥ"
+    "strokes": "一 丨 丿 ㄥ",
+    "inform":"只要是弯钩都是\"ㄥ\"哟~"
   },
   {
     "name": "云",
-    "strokes": "一 一 ㄥ 丶"
+    "strokes": "一 一 ㄥ 丶",
+    "inform":""
   },
   {
     "name": "不",
-    "strokes": "一 丿 丨 丶"
+    "strokes": "一 丿 丨 丶",
+    "inform":""
   },
   {
     "name": "井",
-    "strokes": "一 一 丿 丨"
+    "strokes": "一 一 丿 丨",
+    "inform":""
   },
   {
     "name": "小",
-    "strokes": "丨 丿 丶"
+    "strokes": "丨 丿 丶",
+    "inform":"竖钩和竖是一样的"
   },
   {
     "name": "口",
-    "strokes": "丨 ㄥ 一"
+    "strokes": "丨 ㄥ 一",
+    "inform":""
   },
   {
     "name": "门",
-    "strokes": "丶 丨 ㄥ"
+    "strokes": "丶 丨 ㄥ",
+    "inform":""
   },
   {
     "name": "又",
-    "strokes": "ㄥ 丶"
+    "strokes": "ㄥ 丶",
+    "inform":""
   },
   {
     "name": "刀",
-    "strokes": "ㄥ 丿"
+    "strokes": "ㄥ 丿",
+    "inform":""
   },
   {
     "name": "川",
-    "strokes": "丿 丨 丨"
+    "strokes": "丿 丨 丨",
+    "inform":""
   },
   {
     "name": "个",
-    "strokes": "丿 丶 丨"
+    "strokes": "丿 丶 丨",
+    "inform":""
   },
   {
     "name": "久",
-    "strokes": "丿 ㄥ 丶"
+    "strokes": "丿 ㄥ 丶",
+    "inform":""
   },
   {
     "name": "田",
-    "strokes": "丨 ㄥ 一 丨 一"
+    "strokes": "丨 ㄥ 一 丨 一",
+    "inform":""
   },
   {
     "name": "日",
-    "strokes": "丨 ㄥ 一 一"
+    "strokes": "丨 ㄥ 一 一",
+    "inform":""
   },
   {
     "name": "中",
-    "strokes": "丨 ㄥ 一 丨"
+    "strokes": "丨 ㄥ 一 丨",
+    "inform":""
   },
   {
     "name": "人",
-    "strokes": "丿 丶"
+    "strokes": "丿 丶",
+    "inform":""
   },
   {
     "name": "九",
-    "strokes": "丿 ㄥ"
+    "strokes": "丿 ㄥ",
+    "inform":""
   },
   {
     "name": "广",
-    "strokes": "丶 一 丿"
+    "strokes": "丶 一 丿",
+    "inform":""
   },
   {
     "name": "大",
-    "strokes": "一 丿 丶"
+    "strokes": "一 丿 丶",
+    "inform":""
   },
   {
     "name": "丁",
-    "strokes": "一 丨"
+    "strokes": "一 丨",
+    "inform":""
   },
   {
     "name": "工",
-    "strokes": "一 丨 一"
+    "strokes": "一 丨 一",
+    "inform":""
   },
   {
     "name": "上",
-    "strokes": "丨 一 一"
+    "strokes": "丨 一 一",
+    "inform":""
   },
   {
     "name": "下",
-    "strokes": "一 丨 丶"
+    "strokes": "一 丨 丶",
+    "inform":""
   },
   {
     "name": "山",
-    "strokes": "丨 ㄥ 丨"
+    "strokes": "丨 ㄥ 丨",
+    "inform":""
   },
   {
     "name": "少",
-    "strokes": "丨 丿 丶 丿"
+    "strokes": "丨 丿 丶 丿",
+    "inform":""
   },
   {
     "name": "儿",
-    "strokes": "丿 ㄥ"
+    "strokes": "丿 ㄥ",
+    "inform":""
   },
   {
     "name": "了",
-    "strokes": "ㄥ 丨"
+    "strokes": "ㄥ 丨",
+    "inform":""
   },
   {
     "name": "子",
-    "strokes": "ㄥ 丨 一"
+    "strokes": "ㄥ 丨 一",
+    "inform":""
   },
   {
     "name": "父",
-    "strokes": "丿 丶 丿 丶"
+    "strokes": "丿 丶 丿 丶",
+    "inform":""
   },
   {
     "name": "也",
-    "strokes": "ㄥ 丨 ㄥ"
+    "strokes": "ㄥ 丨 ㄥ",
+    "inform":""
   },
   {
     "name": "从",
-    "strokes": "丿 丶 丿 丶"
+    "strokes": "丿 丶 丿 丶",
+    "inform":""
   },
   {
     "name": "乙",
-    "strokes": "ㄥ"
+    "strokes": "ㄥ",
+    "inform":""
   },
   {
     "name": "力",
-    "strokes": "ㄥ 丿"
+    "strokes": "ㄥ 丿",
+    "inform":""
   },
   {
     "name": "气",
-    "strokes": "丿 一 一 ㄥ"
+    "strokes": "丿 一 一 ㄥ",
+    "inform":""
   },
   {
     "name": "么",
-    "strokes": "丿 ㄥ 丶"
+    "strokes": "丿 ㄥ 丶",
+    "inform":""
   },
   {
     "name": "木",
-    "strokes": "一 丨 丿 丶"
+    "strokes": "一 丨 丿 丶",
+    "inform":""
   },
   {
     "name": "马",
-    "strokes": "ㄥ ㄥ 一"
+    "strokes": "ㄥ ㄥ 一",
+    "inform":""
   },
   {
     "name": "牛",
-    "strokes": "丿 一 一 丨"
+    "strokes": "丿 一 一 丨",
+    "inform":""
   },
   {
     "name": "之",
-    "strokes": "丶 ㄥ 丶"
+    "strokes": "丶 ㄥ 丶",
+    "inform":""
   },
   {
     "name": "己",
-    "strokes": "ㄥ 一 ㄥ"
+    "strokes": "ㄥ 一 ㄥ",
+    "inform":""
   },
   {
     "name": "习",
-    "strokes": "ㄥ 丶 ＊"
+    "strokes": "ㄥ 丶 ＊",
+    "inform":"提只能使用统配符来完成"
   },
   {
     "name": "办",
-    "strokes": "ㄥ 丿 ＊ 丶"
+    "strokes": "ㄥ 丿 ＊ 丶",
+    "inform":""
   },
   {
     "name": "卫",
-    "strokes": "ㄥ 丨 一"
+    "strokes": "ㄥ 丨 一",
+    "inform":""
   },
   {
     "name": "尸",
-    "strokes": "ㄥ 一 丶"
+    "strokes": "ㄥ 一 丶",
+    "inform":""
   },
   {
     "name": "弓",
-    "strokes": "ㄥ 一 ㄥ"
+    "strokes": "ㄥ 一 ㄥ",
+    "inform":""
   },
   {
     "name": "才",
-    "strokes": "一 丨 丿"
+    "strokes": "一 丨 丿",
+    "inform":""
   },
   {
     "name": "心",
-    "strokes": "＊ ㄥ 丶 丶"
+    "strokes": "＊ ㄥ 丶 丶",
+    "inform":""
   }
   ]
 }
