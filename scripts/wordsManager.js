@@ -1,7 +1,7 @@
 "use strict";
 
 $(document).ready(function () {
-    $.getJSON("http://7xj9js.com1.z0.glb.clouddn.com/basic.json", function (data) {
+    $.getJSON("data/basic.json", function (data) {
         console.log(data);
         wordsManager.words = data["words"];
         loadDataToUI(wordsManager.previousWord(), wordsManager.currentWord(), wordsManager.nextWord());
