@@ -5,78 +5,78 @@ $(document).ready(function () {
 
     var buttonList = [
         {
-            "content": "一",
+            "content": "'",
             "number": "1",
-            "value": "一",
+            "value": "",
             "size": ""
-    },
+        },
         {
-            "content": "丨",
+            "content": "abc",
             "number": "2",
-            "value": "丨",
+            "value": "abc",
             "size": ""
 
-    },
+        },
         {
-            "content": "丿",
+            "content": "def",
             "number": "3",
-            "value": "丿",
+            "value": "def",
             "size": ""
-    },
+        },
         {
             "content": "D",
             "number": "",
             "value": "",
             "size": ""
-    },
+        },
         {
-            "content": "丶",
+            "content": "ghi",
             "number": "4",
-            "value": "丶",
+            "value": "ghi",
             "size": ""
-    },
+        },
         {
-            "content": "ㄥ",
+            "content": "jkl",
             "number": "5",
-            "value": "ㄥ",
+            "value": "jkl",
             "size": ""
-    },
+        },
         {
-            "content": "＊",
+            "content": "mno",
             "number": "6",
-            "value": "＊",
+            "value": "mno",
             "size": ""
-    },
+        },
         {
             "content": "C",
             "number": "",
             "value": "",
             "size": ""
-    },
+        },
         {
-            "content": "分词",
+            "content": "pqrs",
             "number": "7",
-            "value": "",
-            "size": "font-small"
-    },
+            "value": "pqrs",
+            "size": ""
+        },
         {
-            "content": "，",
+            "content": "tuv",
             "number": "8",
-            "value": "",
+            "value": "tuv",
             "size": ""
-    },
+        },
         {
-            "content": "。",
+            "content": "wxyz",
             "number": "9",
-            "value": "",
+            "value": "wxyz",
             "size": ""
-    },
+        },
         {
             "content": "OK",
             "number": "",
             "value": "",
             "size": ""
-    }
+        }
     ];
     var ButtonBuilder = function (buttonConfig) {
         var button = $("<div>").addClass("key-wrapper btn btn-primary").attr("data-value", buttonConfig.value);
@@ -88,12 +88,12 @@ $(document).ready(function () {
         if (buttonConfig.size.length > 0) {
             content.addClass('font-small');
         }
-        
+
         var number = $("<div>").addClass("number").text(buttonConfig.number);
         if (buttonConfig.number.length == 0) {
             number.addClass('empty');
         }
-        
+
         button.append([number, content]);
         return button;
     };
@@ -105,7 +105,7 @@ $(document).ready(function () {
         wrapper.append(ButtonBuilder(buttonList[idx]));
         $("#keyboard .kb-wrapper").append(wrapper);
     };
-    
+
     var KeyboardBuilder = function(dom){
         return {
             keyboard: dom,
@@ -113,7 +113,7 @@ $(document).ready(function () {
                 $('#keyboard .kb-wrapper .key-wrapper').removeClass('error');
             }
         }
-    }
-    
+    };
+
     window.keyboard = KeyboardBuilder($("#keyboard .kb-wrapper"));
 });

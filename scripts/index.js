@@ -34,7 +34,8 @@ function loadDataToUI(previousWord, currentWord, nextWord) {
         $nextCharacter.html(nextWord["name"]);
     }
 
-    $('#strokes').empty().append(strokeManager.strokesGen(currentWord["strokes"].split(' ')));
+    $('#strokes').empty().append(strokeManager.strokesGen(currentWord["stroke"].split('')));
+
     resultManager.resetStartTime();
 }
 
@@ -44,10 +45,12 @@ $(document).ready(function () {
     if ( window.innerHeight < 500 ){
         $("body").css("font-size", "12px");
     }
-    $.getJSON("http://7xj9js.com1.z0.glb.clouddn.com/basic.json", function (data) {
+    $.getJSON("data/basic-pinyin.json", function (data) {
+
         wordsManager.words = data["words"].sort(function () {
             return Math.random() - 0.5;
         });
+        wordsManager.init();
         loadDataToUI(wordsManager.previousWord(), wordsManager.currentWord(), wordsManager.nextWord());
     });
     $('.key-wrapper').click(keypress);

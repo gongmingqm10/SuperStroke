@@ -18,8 +18,8 @@ var resultManager = {
         return new Date().getTime() - this.startTime;
     },
     storeResult: function (stroke) {
-        this.result[stroke].push(this.calculateTimeCost());
-        this.sortResult();
+        //this.result[stroke].push(this.calculateTimeCost());
+        //this.sortResult();
     },
     sortResult: function () {
         this.sortedResult = [];

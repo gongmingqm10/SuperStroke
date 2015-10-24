@@ -41,7 +41,7 @@ var strokeManager = {
     },
 
     validate: function (userInput) {
-        return userInput === this.currentStroke();
+        return userInput.indexOf( this.currentStroke() ) != -1;
     },
 
     currentStroke: function () {
