@@ -41,8 +41,8 @@ function loadDataToUI(previousWord, currentWord, nextWord) {
 $(document).ready(function () {
     $("body").height = window.innerHeight;
     $("body").width = window.innerWidth;
-    if ( window.innerHeight < 600 ){
-        $("body").css("font-size","12px");
+    if ( window.innerHeight < 500 ){
+        $("body").css("font-size", "12px");
     }
     $.getJSON("http://7xj9js.com1.z0.glb.clouddn.com/basic.json", function (data) {
         wordsManager.words = data["words"].sort(function () {
