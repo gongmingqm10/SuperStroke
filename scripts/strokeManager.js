@@ -1,11 +1,4 @@
 "use strict"
-var demoSentence = '思特沃克';
-var demoStroke = [
-	['丨', 'ㄥ', '一', '丨', '一', '丿', 'ㄥ', '丶', '丶'],
-	['丿', '一', '丨', '一', '一', '丨', '一', '一', 'ㄥ', '丶'],
-	['丶', '丶', '一', '丿', '一', '丿', '丶'],
-	['一', '丨', '丨', 'ㄥ', '一', '丿', 'ㄥ']
-];
 
 var characterIndex = 0;
 var strokeIndex = 0;
@@ -47,6 +40,10 @@ var strokeManager = {
         
     validate: function(userInput){
         return (userInput)==(this._strokeList[this.strokeIndex]);
+    },
+
+    currentStroke: function() {
+        return this._strokeList[this.strokeIndex];
     }
     
 };
@@ -54,13 +51,14 @@ var strokeManager = {
 function keypress () {
     
 	var userInput = $(this).attr('data-value');
-    var currentStroke = demoStroke[characterIndex][strokeManager.strokeIndex];
+    //var currentStroke = strokeManager.currentStroke();
     var statu = strokeManager.forword(userInput);
     
     if ( statu == strokeManager.FINISHED ){
         //TODO
         characterIndex++;
-        initUI();
+        //initUI();
+        wordsManager.updateIndex();
     }
     console.log(userInput);
 };
@@ -71,9 +69,17 @@ function initUI() {
     $('#strokes').append(strokeManager.strokesGen(demoStroke[characterIndex]));
 }
 
+function loadDataToUI(word) {
+    if (word == null) {
+        alert("恭喜你，通过闯关测试！");
+        return;
+    }
+    $('#character').html(word["name"]);
+    $('#strokes').empty();
+    $('#strokes').append(strokeManager.strokesGen(word["strokes"].split(' ')));
+}
+
 $(document).ready(function() {
-    initUI();
-    
     $('.key-wrapper').click(keypress);
 });
 
