@@ -8,21 +8,24 @@ var strokeManager = {
     FAILED: 2,
     line: [],
     _strokeList: [],
+    strokeIndex: 0,
+
     strokesGen: function (strokeList) {
+        var self = this;
         this.line = $('<div>');
         this._strokeList = strokeList;
         this.strokeIndex = 0;
-        for (var idx in strokeList) {
-            var stroke = strokeList[idx];
+        this._strokeList.forEach(function (stroke) {
             var wrapper = $('<span>').text(stroke);
-            this.line.append(wrapper);
-        }
+            self.line.append(wrapper);
+        });
         $(this.line.children().get(this.strokeIndex)).addClass('current');
         return this.line;
     },
-    strokeIndex: 0,
+
     forward: function (userInput) {
         if (this.validate(userInput)) {
+            resultManager.storeResult(this.currentStroke());
             this.strokeIndex++;
             if (this._strokeList.length === this.strokeIndex) {
                 return this.FINISHED;
@@ -38,7 +41,7 @@ var strokeManager = {
     },
 
     validate: function (userInput) {
-        return (userInput) == (this._strokeList[this.strokeIndex]);
+        return userInput === this.currentStroke();
     },
 
     currentStroke: function () {
@@ -46,47 +49,3 @@ var strokeManager = {
     }
 
 };
-
-
-function keypress() {
-    var userInput = $(this).attr('data-value');
-    var status = strokeManager.forward(userInput);
-    keyboard.clearErrors();
-    if (status == strokeManager.FAILED){
-        $(this).addClass("error");
-    }
-    if (status == strokeManager.FINISHED) {
-        characterIndex++;
-        wordsManager.updateIndex();
-    }
-}
-
-function loadDataToUI(previousWord, currentWord, nextWord) {
-    var $previousCharacter = $('#character .previous').empty(),
-        $currentCharacter = $('#character .current').empty(),
-        $nextCharacter = $('#character .next').empty();
-
-    if (!currentWord) {
-        alert("恭喜你，通过闯关测试！");
-        return;
-    }
-
-    if (previousWord) {
-        $previousCharacter.html(previousWord["name"]);
-    }
-
-    $currentCharacter.html(currentWord["name"]);
-
-    if (nextWord) {
-        $nextCharacter.html(nextWord["name"]);
-    }
-
-    $('#strokes').empty().append(strokeManager.strokesGen(currentWord["strokes"].split(' ')));
-}
-
-$(document).ready(function () {
-    $('.key-wrapper').click(keypress);
-});
-
-
-

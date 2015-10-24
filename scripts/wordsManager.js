@@ -1,13 +1,5 @@
 "use strict";
 
-$(document).ready(function () {
-    $.getJSON("data/basic.json", function (data) {
-        console.log(data);
-        wordsManager.words = data["words"];
-        loadDataToUI(wordsManager.previousWord(), wordsManager.currentWord(), wordsManager.nextWord());
-    })
-});
-
 var wordsManager = {
     words: [],
     currentIndex: 0,
