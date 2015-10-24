@@ -6,6 +6,7 @@ var demoStroke = [
 	['丶', '丶', '一', '丿', '一', '丿', '丶'],
 	['一', '丨', '丨', 'ㄥ', '一', '丿', 'ㄥ']
 ];
+
 var characterIndex = 0;
 var strokeIndex = 0;
 
