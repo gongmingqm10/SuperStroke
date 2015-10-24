@@ -1,3 +1,14 @@
+html {
+  margin: 0 auto;
+  padding: 0;
+  overflow-x: hidden;
+}
+body {
+  margin: 0 auto;
+  overflow-x: hidden;
+  width: 950px;
+}
+
 #keyboard {
     display: block;
     position: fixed;
