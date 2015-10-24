@@ -17,6 +17,10 @@
     margin-bottom: .5em;
 }
 
+#keyboard .key-wrapper.error {
+    background-color: deeppink;
+}
+
 #keyboard .number {
     display: block;
 }

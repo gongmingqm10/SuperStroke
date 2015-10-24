@@ -1,7 +1,16 @@
 {
   "level": "基础训练",
   "description": "训练笔画基础，横撇竖捺勾",
-  "words": [{
+  "words": [
+  {
+    "name": "一",
+    "strokes": "一"
+  },
+  {
+    "name": "十",
+    "strokes": "一 丨"
+  },    
+  {
     "name": "二",
     "strokes": "一 一"
   },
@@ -9,10 +18,7 @@
     "name": "三",
     "strokes": "一 一 一"
   },
-  {
-    "name": "十",
-    "strokes": "一 丨"
-  },
+  
   {
     "name": "土",
     "strokes": "一 丨 一"

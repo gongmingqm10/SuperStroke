@@ -49,10 +49,12 @@ var strokeManager = {
 
 
 function keypress() {
-
     var userInput = $(this).attr('data-value');
     var status = strokeManager.forward(userInput);
-
+    keyboard.clearErrors();
+    if (status == strokeManager.FAILED){
+        $(this).addClass("error");
+    }
     if (status == strokeManager.FINISHED) {
         characterIndex++;
         wordsManager.updateIndex();

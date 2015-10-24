@@ -105,4 +105,15 @@ $(document).ready(function () {
         wrapper.append(ButtonBuilder(buttonList[idx]));
         $("#keyboard .kb-wrapper").append(wrapper);
     };
+    
+    var KeyboardBuilder = function(dom){
+        return {
+            keyboard: dom,
+            clearErrors: function(){
+                $('#keyboard .kb-wrapper .key-wrapper').removeClass('error');
+            }
+        }
+    }
+    
+    window.keyboard = KeyboardBuilder($("#keyboard .kb-wrapper"));
 });
