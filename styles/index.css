@@ -1,12 +1,12 @@
 
 #character {
-    margin-top: 100px;
+    margin-top: 1em;
     font-size: 4.4em;
     text-align: center;
 }
 
 #strokes {
-    font-size: 60px;
+    font-size: 4em;
     text-align: center;
 }
 
@@ -17,7 +17,7 @@
 
 #character-wrapper{
     height: 50%;
-    font-size: 16px;
+    font-size: 1em;
 }
 
 #character .current {

@@ -1,3 +1,5 @@
+
+
 html {
   margin: 0 auto;
   padding: 0;
@@ -6,6 +8,7 @@ html {
 body {
   margin: 0 auto;
   overflow-x: hidden;
+    font-size: 16px;
 }
 
 #keyboard {
@@ -38,12 +41,11 @@ body {
     height: .5em;
 }
 
-
 #keyboard .content {
-    font-size: 30px;
+    font-size: 2em;
 }
 
 #keyboard .content.font-small{
     padding-top: .5em;
-    font-size: 15px;
+    font-size: 1em;
 }
