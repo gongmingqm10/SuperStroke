@@ -41,7 +41,9 @@ $(document).ready(function () {
     $("body").height = window.innerHeight;
     $("body").width = window.innerWidth;
     $.getJSON("http://7xj9js.com1.z0.glb.clouddn.com/basic.json", function (data) {
-        wordsManager.words = data["words"];
+        wordsManager.words = data["words"].sort(function () {
+            return Math.random() - 0.5;
+        });
         loadDataToUI(wordsManager.previousWord(), wordsManager.currentWord(), wordsManager.nextWord());
     });
     $('.key-wrapper').click(keypress);
