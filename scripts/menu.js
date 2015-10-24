@@ -3,8 +3,8 @@ var historyPage = $("<div>").addClass("historyPage").text("History");
 
 
 var menu = {
-    historyButton : $("<div>").addClass("navi btn btn-default").text("换"),
-    switchButton : $("<a>").addClass("navi btn btn-default").text("查"),
+    historyButton : $("<div>").addClass("navi btn btn-default").text("查"),
+    switchButton : $("<a>").addClass("navi btn btn-default").text("换"),
 
 
     "init":function(href){
