@@ -1,0 +1,20 @@
+#keyboard{
+    display:block;
+    position:fixed;
+    width: 100%;
+    bottom: 0;
+    background-color:antiquewhite;
+}
+
+#keyboard .key{
+    
+    background-color: lightcyan;
+    padding: 2em;
+    
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    
+    height: 5em;
+
+}
