@@ -1,10 +1,12 @@
 #strokes span {
     font-weight: bold;
 }
-#strokes span.success{
+
+#strokes span.success {
     color: chartreuse;
 }
-#strokes span.failed{
+
+#strokes span.failed {
     color: deeppink;
 }
 
@@ -17,8 +19,7 @@
     }
 }
 
-
-#strokes span.current{
+#strokes span.current {
     animation: underline 1s infinite;
     border-bottom: 3px solid black;
 }
