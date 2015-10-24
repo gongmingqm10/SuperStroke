@@ -1,0 +1,25 @@
+#strokes span {
+    font-weight: bold;
+}
+#strokes span.success{
+    color: chartreuse;
+}
+#strokes span.failed{
+    color: deeppink;
+}
+
+@keyframes underline {
+    0% {
+        border-bottom: 3px solid black;
+    }
+    50% {
+        border-bottom: none;
+    }
+}
+
+
+#strokes span.current{
+    animation: underline 1s infinite;
+    border-bottom: 3px solid black;
+}
+
