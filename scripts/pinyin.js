@@ -1,6 +1,5 @@
 "use strict";
 
-
 function keypress() {
     var userInput = $(this).attr('data-value');
     var status = strokeManager.forward(userInput);
@@ -10,6 +9,11 @@ function keypress() {
     }
     if (status == strokeManager.FINISHED) {
         characterIndex++;
+        wordsManager.currentWord().frac.forEach(function(f){
+            resultManager.checkPinyinPoint(f);
+        });
+        resultManager.resetStartTime();
+
         wordsManager.updateIndex();
     }
 }
@@ -35,7 +39,6 @@ function loadDataToUI(previousWord, currentWord, nextWord) {
     }
 
     $('#strokes').empty().append(strokeManager.strokesGen(currentWord["strokes"].split('')));
-
 }
 
 $(document).ready(function () {
@@ -45,12 +48,13 @@ $(document).ready(function () {
         $("body").css("font-size", "12px");
     }
     $.getJSON("data/basic-pinyin.json", function (data) {
-        wordsManager.words = data["words"].sort(function () {
+        wordsManager.setWords(data["words"].sort(function () {
             return Math.random() - 0.5;
-        });
-        wordsManager.init();
-        pyManager.init();
+        }));
+        wordsManager.initPinyin();
+        pyManager.initPinyin();
         loadDataToUI(wordsManager.previousWord(), wordsManager.currentWord(), wordsManager.nextWord());
+        resultManager.initResultList(wordsManager.fracList);
         resultManager.resetStartTime();
     });
     $('.key-wrapper').click(keypress);

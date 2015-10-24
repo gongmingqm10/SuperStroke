@@ -27,7 +27,7 @@ var strokeManager = {
         if (userInput.length==0){return this.SUCCESS;}
         if (this.validate(userInput)) {
             resultManager.storeResult(this.currentStroke());
-            resultManager.resetStartTime();
+            //resultManager.resetStartTime();
             this.strokeIndex++;
             if (this._strokeList.length === this.strokeIndex) {
                 return this.FINISHED;

@@ -89,9 +89,83 @@
       "frac": ["n", "ian"]
     },
     {
-      "name": "倩",
-      "frac": ["q","ian"]
+      "name": "问",
+      "frac": ["w","en"]
+    },{
+      "name": "特",
+      "frac": ["t","e"]
+    },{
+      "name": "人",
+      "frac": ["r","en"]
+    },{
+      "name": "元",
+      "frac": ["y","uan"]
+    },{
+      "name": "依",
+      "frac": ["yi"]
+    },{
+      "name": "题",
+      "frac": ["t","i"]
+    },{
+      "name": "咯",
+      "frac": ["l","o"]
+    },{
+      "name": "破",
+      "frac": ["p","o"]
+    },{
+      "name": "他",
+      "frac": ["t","a"]
+    },{
+      "name": "萨",
+      "frac": ["s","a"]
+    },{
+      "name": "大",
+      "frac": ["d","a"]
+    },{
+      "name": "发",
+      "frac": ["f","a"]
+    },{
+      "name": "高",
+      "frac": ["g","ao"]
+    },{
+      "name": "混",
+      "frac": ["h","un"]
+    },{
+      "name": "加",
+      "frac": ["j","ia"]
+    },{
+      "name": "看",
+      "frac": ["k","an"]
+    },{
+      "name": "柳",
+      "frac": ["l","iu"]
+    },{
+      "name": "在",
+      "frac": ["z","ai"]
+    },{
+      "name": "先",
+      "frac": ["x","ian"]
+    },{
+      "name": "才",
+      "frac": ["c","ai"]
+    },{
+      "name": "绿",
+      "frac": ["l","v"]
+    },{
+      "name": "步",
+      "frac": ["b","u"]
+    },{
+      "name": "您",
+      "frac": ["n","ing"]
+    },{
+      "name": "明",
+      "frac": ["m","ing"]
+    },{
+      "name": "公",
+      "frac": ["g","ong"]
+    },{
+      "name": "熊",
+      "frac": ["x","iong"]
     }
-
   ]
 }

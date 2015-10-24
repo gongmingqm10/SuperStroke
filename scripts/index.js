@@ -8,6 +8,8 @@ function keypress() {
     if (status == strokeManager.FAILED){
         $(this).addClass("error");
     }
+    resultManager.checkStrokePoint(userInput);
+    resultManager.resetStartTime();
     if (status == strokeManager.FINISHED) {
         characterIndex++;
         wordsManager.updateIndex();
@@ -50,6 +52,7 @@ $(document).ready(function () {
             return Math.random() - 0.5;
         });
         loadDataToUI(wordsManager.previousWord(), wordsManager.currentWord(), wordsManager.nextWord());
+        wordsManager.initStroke();
         resultManager.resetStartTime();
     });
     $('.key-wrapper').click(keypress);

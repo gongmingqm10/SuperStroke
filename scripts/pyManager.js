@@ -7,5 +7,5 @@ var pyManager = (function(){
         });
     };
 
-    return {"init":init};
+    return {"initPinyin":init};
 })();
