@@ -3,127 +3,239 @@
   "description": "训练笔画基础，横撇竖捺勾",
   "words": [{
     "name": "二",
-    "strokes": ""
+    "strokes": "一 一"
   },
   {
     "name": "三",
-    "strokes": ""
+    "strokes": "一 一 一"
   },
   {
     "name": "十",
-    "strokes": ""
+    "strokes": "一 丨"
   },
   {
     "name": "土",
-    "strokes": ""
+    "strokes": "一 丨 一"
   },
   {
     "name": "干",
-    "strokes": ""
+    "strokes": "一 一 丨"
   },
   {
     "name": "王",
-    "strokes": ""
+    "strokes": "一 一 丨 一"
   },
   {
     "name": "八",
-    "strokes": ""
+    "strokes": "丿 丶"
   },
   {
     "name": "千",
-    "strokes": ""
+    "strokes": "丿 一 |"
   },
   {
     "name": "开",
-    "strokes": ""
+    "strokes": "一 一 丿 丨"
   },
   {
     "name": "元",
-    "strokes": ""
+    "strokes": "一 丨 丿 ㄥ"
   },
   {
     "name": "无",
-    "strokes": ""
+    "strokes": "一 丨 丿 ㄥ"
   },
   {
     "name": "云",
-    "strokes": ""
+    "strokes": "一 一 ㄥ 丶"
   },
   {
     "name": "不",
-    "strokes": ""
+    "strokes": "一 丿 丨 丶"
   },
   {
     "name": "井",
-    "strokes": ""
+    "strokes": "一 一 丿 丨"
   },
   {
     "name": "小",
-    "strokes": ""
+    "strokes": "丨 丿 丶"
   },
   {
     "name": "口",
-    "strokes": ""
+    "strokes": "丨 ㄥ 一"
   },
   {
     "name": "门",
-    "strokes": ""
+    "strokes": "丶 丨 ㄥ"
   },
   {
     "name": "又",
-    "strokes": ""
+    "strokes": "ㄥ 丶"
   },
   {
     "name": "刀",
-    "strokes": ""
+    "strokes": "ㄥ 丿"
   },
   {
     "name": "川",
-    "strokes": ""
+    "strokes": "丿 丨 丨"
   },
   {
     "name": "个",
-    "strokes": ""
+    "strokes": "丿 丶 丨"
   },
   {
     "name": "久",
-    "strokes": ""
+    "strokes": "丿 ㄥ 丶"
   },
   {
     "name": "田",
-    "strokes": ""
+    "strokes": "丨 ㄥ 一 丨 一"
   },
   {
     "name": "日",
-    "strokes": ""
+    "strokes": "丨 ㄥ 一 一"
   },
   {
     "name": "中",
-    "strokes": ""
+    "strokes": "丨 ㄥ 一 丨"
   },
   {
     "name": "人",
-    "strokes": ""
+    "strokes": "丿 丶"
   },
   {
     "name": "九",
-    "strokes": ""
+    "strokes": "丿 ㄥ"
   },
   {
     "name": "广",
-    "strokes": ""
+    "strokes": "丶 一 丿"
   },
   {
     "name": "大",
-    "strokes": ""
+    "strokes": "一 丿 丶"
   },
   {
     "name": "丁",
-    "strokes": ""
+    "strokes": "一 丨"
   },
   {
     "name": "工",
+    "strokes": "一 丨 一"
+  },
+  {
+    "name": "上",
+    "strokes": "丨 一 一"
+  },
+  {
+    "name": "下",
+    "strokes": "一 丨 丶"
+  },
+  {
+    "name": "山",
+    "strokes": "丨 ㄥ 丨"
+  },
+  {
+    "name": "少",
+    "strokes": "丨 丿 丶 丿"
+  },
+  {
+    "name": "儿",
+    "strokes": "丿 ㄥ"
+  },
+  {
+    "name": "了",
+    "strokes": "ㄥ 丨"
+  },
+  {
+    "name": "子",
+    "strokes": "ㄥ 丨 一"
+  },
+  {
+    "name": "父",
+    "strokes": "丿 丶 丿 丶"
+  },
+  {
+    "name": "也",
+    "strokes": "ㄥ 丨 ㄥ"
+  },
+  {
+    "name": "从",
+    "strokes": "丿 丶 丿 丶"
+  },
+  {
+    "name": "乙",
+    "strokes": "ㄥ"
+  },
+  {
+    "name": "力",
+    "strokes": "ㄥ 丿"
+  },
+  {
+    "name": "气",
+    "strokes": "丿 一 一 ㄥ"
+  },
+  {
+    "name": "么",
+    "strokes": "丿 ㄥ 丶"
+  },
+  {
+    "name": "木",
+    "strokes": "一 丨 丿 丶"
+  },
+  {
+    "name": "马",
+    "strokes": "ㄥ ㄥ 一"
+  },
+  {
+    "name": "牛",
+    "strokes": "丿 一 一 丨"
+  },
+  {
+    "name": "之",
+    "strokes": "丶 ㄥ 丶"
+  },
+  {
+    "name": "己",
+    "strokes": "ㄥ 一 ㄥ"
+  },
+  {
+    "name": "习",
+    "strokes": "ㄥ 丶 ＊"
+  },
+  {
+    "name": "办",
+    "strokes": "ㄥ 丿 ＊ 丶"
+  },
+  {
+    "name": "办",
     "strokes": ""
+  },
+  {
+    "name": "卫",
+    "strokes": "ㄥ 丨 一"
+  },
+  {
+    "name": "尸",
+    "strokes": "ㄥ 一 丶"
+  },
+  {
+    "name": "弓",
+    "strokes": "ㄥ 一 ㄥ"
+  },
+  {
+    "name": "才",
+    "strokes": "一 丨 丿"
+  },
+  {
+    "name": "办",
+    "strokes": "ㄥ 一 ㄥ"
+  },
+  {
+    "name": "心",
+    "strokes": "＊ ㄥ 丶 丶"
   }
   ]
 }
