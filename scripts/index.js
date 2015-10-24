@@ -17,5 +17,5 @@ function keypress () {
 $(document).ready(function() {
 	$('#character').html(demoSentence[characterIndex]);
 	$('#strokes').html(demoStroke[characterIndex].toString().replace(/,/g, ''));
-	$('.key').click(keypress);
+	$('.key-wrapper').click(keypress);
 });
