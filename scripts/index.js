@@ -19,7 +19,9 @@ function keypress() {
 function loadDataToUI(previousWord, currentWord, nextWord) {
     var $previousCharacter = $('#character .previous').empty(),
         $currentCharacter = $('#character .current').empty(),
-        $nextCharacter = $('#character .next').empty();
+        $nextCharacter = $('#character .next').empty(),
+        $inform = $('#character .info').empty();
+
 
     if (!currentWord) {
         alert("恭喜你，通过闯关测试！");
@@ -34,6 +36,10 @@ function loadDataToUI(previousWord, currentWord, nextWord) {
 
     if (nextWord) {
         $nextCharacter.html(nextWord["name"]);
+    }
+
+    if (currentWord["inform"].length>0){
+        $inform.html(currentWord["inform"]);
     }
 
     $('#strokes').empty().append(strokeManager.strokesGen(currentWord["strokes"].split(' ')));

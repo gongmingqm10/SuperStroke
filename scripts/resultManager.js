@@ -14,7 +14,7 @@ var resultManager = {
     resultList: {},
     _getTimeSecons:function(){
         var date = new Date();
-        return date.getTime() * 1000 + date.getMilliseconds();
+        return date.getTime();
     },
     resetStartTime: function () {
         this.startTime = this._getTimeSecons();
@@ -75,16 +75,16 @@ var resultManager = {
         $('.slowest').html('最不熟练的笔画：' + this.getSlowestStroke());
     },
     report: function(){
-        var wrapper = $("<div>").text("haha");
+        var reportList = [];
         for ( var key in this.result){
             var obj = this.result[key];
-            wrapper.append( $("<p>").text(key + "," + obj.average) );
+            reportList.push({label:key, y: obj.average/1000});
         }
         for ( var key in this.resultList){
             var obj = this.resultList[key];
-            wrapper.append( $("<p>").text(key + "," + obj.average));
+            reportList.push({label:key, y: obj.average/1000});
         }
-        return wrapper;
+        return reportList;
     },
     getFastestStroke: function () {
         var fastestStroke = this.sortedResult[0];

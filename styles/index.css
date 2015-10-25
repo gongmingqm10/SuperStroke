@@ -23,6 +23,8 @@ body {
 #character .previous {
     text-align: right;
     opacity: .3;
+    font-size: .6em;
+    padding-top: .5em;
 }
 
 #character-wrapper{
@@ -35,4 +37,11 @@ body {
 #character .next {
     text-align: left;    
     opacity: .3;
+    font-size: .6em;
+    padding-top: .5em;
+}
+
+#character .info{
+    font-size: .5em;
+    color:darkgray;
 }
