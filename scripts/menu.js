@@ -1,5 +1,5 @@
 var historyPageHide = $("<div>").addClass("btn btn-primary").text("close");
-var historyChart = $("<div id='historyChart'></div>").text("Chart").css("margin", "0 auto");
+var historyChart = $("<div id='historyChart' width='489px'></div>").text("Chart").css("margin", "0 auto");
 var historyPage = $("<div>").addClass("historyPage").text("History");
 
 
