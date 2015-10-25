@@ -15,7 +15,7 @@ function keypress() {
         });
         resultManager.resetStartTime();
 
-        
+
         wordsManager.updateIndex();
     }
 }
@@ -63,6 +63,4 @@ $(document).ready(function () {
 
     
     menu.init("index.html");
-
-
 });

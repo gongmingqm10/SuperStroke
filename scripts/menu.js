@@ -1,6 +1,6 @@
 var historyPageHide = $("<div>").addClass("btn btn-primary").text("close");
-var historyChart = $("<div id='historyChart' width='430px'></div>").text("Chart");
-var historyPage = $("<div>").addClass("historyPage").text("History");
+var historyChart = $("#historyChart");
+var historyPage = $("#historyPage");
 
 
 function chartMaker(report){
@@ -44,25 +44,25 @@ var menu = {
         $("#menu").append(this.historyButton);
         $("#menu").append(this.switchButton);
 
+        historyChart = $("#historyChart");
+        historyPage = $("#historyPage");
+
+
         historyPage.hide();
-        $("body").prepend(historyPage);
+        //$("body").prepend(historyPage);
 
         this.switchButton.attr("href", href);
-
+        historyPage.prepend(historyPageHide);
+        historyPageHide.on("click",function(){
+            historyPage.hide();
+        });
         this.historyButton.on("click", function(){
 
-            historyPage.empty();
+            //historyPage.empty();
 
-            historyPage.append(historyPageHide);
-            historyPageHide.on("click",function(){
-                historyPage.hide();
-            });
 
-            historyPage.append(historyChart);
+            //historyPage.append(historyChart);
             chartMaker(resultManager.report());
-
-
-
 
             historyPage.show();
             console.log("haha");
